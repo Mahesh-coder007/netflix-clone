@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* utilities */
+.container {
+  max-width: 1186px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+h1 {
+  font-size: 46px;
+  font-weight: 800;
+  color: #fff;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+h4 {
+  color: #afacae;
+  font-weight: 400;
+}
+p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(images/asset\ globe.jpg);
+  background-size: 100%, 90%;
+}
+.nav-bar {
+  justify-content: space-between;
+}
+.logo img {
+  width: 22vh;
+}
+.nav-btn .btn1 {
+  margin-right: 20px;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: 0.2px solid white;
+  outline: 0;
+  background-color: transparent;
+  padding: 5px 30px;
+}
+.nav-btn .btn2 {
+  font-size: 1rem;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  background-color: #e50914;
+  padding: 6px 15px;
+}
+.hero-content {
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  margin-top: 170px;
+}
+.email-signup input {
+  color: #fff;
+  font-size: 16px;
+  width: 30vw;
+  padding: 15px 10px;
+  outline: 0;
+  border: 0.1px solid rgb(231, 228, 228);
+  border-radius: 4px;
+  background-color: transparent;
+}
+.email-signup .btn3 {
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  background-color: #e50914;
+  font-size: 23px;
+  font-weight: 400;
+  padding: 9px 35px;
+  margin-left: 5px;
+}
+.line {
+  height: 8px;
+  width: 100%;
+  background-color: #222322;
+}
+
+/* tv-section */
+
+.whole {
+  background-color: #000101;
+}
+.tv {
+  height: 63vh;
+}
+.tv.right img {
+  width: 550px;
+}
+
+/* second tv */
+.tv .left img {
+  width: 565px;
+}
+/* banner */
+.banner {
+  height: 63vh;
+}
+.banner .left img {
+  width: 610px;
+}
+/* <-------------------faq---------------------> */
+
+.faq {
+  color: #fff;
+}
+.faq h1 {
+  text-align: center;
+  margin-top: 60px;
+}
+.accor {
+  margin: 40px auto;
+  width: 100%;
+}
+.accor li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+.accor li label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 22px;
+  margin-bottom: 2px;
+  background-color: #303030;
+  transition: 0.3s;
+}
+.accor li label:hover {
+  background-color: #4e4e4e;
+}
+label::after {
+  content: "+";
+  font-size: 24px;
+  position: absolute;
+  right: 180px;
+  transition: 0.5s;
+}
+input[type="radio"] {
+  display: none;
+}
+.accor .content {
+  background-color: #303030;
+  padding: 0px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-hight 0.5s, padding 0.5s;
+}
+.accor input[type="radio"]:checked + label + .content {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+.accor input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+.form-bottom {
+  margin-bottom: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+/* <-----------------footer---------------> */
+footer {
+ padding-block: 50px;
+}
+.footer-div {
+  margin-block: 45px;
+  justify-content: space-between;
+}
+.footer-div div ul li a{
+  color: #afacae;
+  text-decoration: underline;
+}
+.footer-div div ul li a:hover{
+  color: #fff;
+}
+.footer-div div ul li a:active{
+  color: #e50914;
+}
+footer h4{
+  margin-top: 17px;
+}
